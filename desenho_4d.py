@@ -11,6 +11,7 @@ def go(num1,num2, zoom = zoom):
     global x,y
     p.goto(zoom * num1 + x, zoom * num2 + y)
 
+
 def cubo_4d():
     p.pendown()
     p.speed(5)
@@ -66,19 +67,6 @@ def cubo_4d():
     p.penup()
     go(0,0)
 
-def ligações_5d():
-    pass
-
-def cubo_5d():
-    global zoom,x,y,p
-    cubo_4d()
-
-    x = 100
-    y = -200
-
-    cubo_4d()
-
-
-
-cubo_5d()
+input("a")
+cubo_4d()
 turtle.done()
